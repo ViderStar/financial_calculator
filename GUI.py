@@ -35,7 +35,7 @@ class Fields:
             input_frame.pack(pady=10, padx=10)
 
             # Текстовое поле
-            entry = ttk.Entry(input_frame)
+            entry = ttk.Entry(input_frame, width=50)
             entry.pack(fill="x", padx=5, pady=5)
             self.fields.append(entry)
 

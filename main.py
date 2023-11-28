@@ -7,7 +7,7 @@ from checker import Checker
 
 if __name__ == '__main__':
     root = tk.Tk()
-    root.geometry("600x700")
+    root.geometry("600x720")
     root.title("Artsem's Calculator")
     root.iconbitmap(r"img.ico")
     root.tk.call("source", "Azure-ttk-theme/azure.tcl")
@@ -24,5 +24,7 @@ if __name__ == '__main__':
 
     cntrl.result_display.pack(anchor=tk.S, pady=10)
 
+    year_label = ttk.Label(text="2023")
+    year_label.pack(anchor=tk.N)
     root.resizable(False, False)
     root.mainloop()
